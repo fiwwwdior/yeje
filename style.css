@@ -7,10 +7,10 @@
 
 /* ====== BODY ====== */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fugaz One', Sans-Serif;
   background: radial-gradient(circle at top, #0a0f24, #030611);
   color: #e0e0e0;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +27,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-}
+} 
 
 header .logo {
   font-size: 1.4rem;
