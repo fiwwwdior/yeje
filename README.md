@@ -1,1 +1,1 @@
-# yeje
+https://fiwwwdior.github.io/yeje/#
