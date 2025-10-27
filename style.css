@@ -10,7 +10,7 @@ body {
   font-family: 'Fugaz One', Sans-Serif;
   background: radial-gradient(circle at top, #0a0f24, #030611);
   color: #e0e0e0;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
