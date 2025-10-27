@@ -36,17 +36,15 @@ header .logo {
   text-shadow: 0 0 12px #00e5ff;
 }
 
-nav a {
-  color: #b0b8ff;
-  text-decoration: none;
-  margin: 0 12px;
-  font-weight: 500;
+.nav-link i {
+  font-size: 24px;
+  color: white;
   transition: 0.3s;
 }
 
-nav a:hover {
-  color: #00e5ff;
-  text-shadow: 0 0 8px #00e5ff;
+.nav-link i:hover {
+  color: #00c3ff;
+  transform: scale(1.1);
 }
 
 /* ====== HERO ====== */
@@ -134,4 +132,40 @@ footer {
   color: #777;
   font-size: 0.9rem;
   border-top: 1px solid #00e5ff33;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background: #00ffff;
+  box-shadow: 0 0 25px #00ffff;
+  transform: translateY(-3px);
+}
+
+.social-links i {
+  font-size: 28px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover i {
+  color: black;
 }
