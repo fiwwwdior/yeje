@@ -1,0 +1,137 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== BODY ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a0f24, #030611);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== HEADER ====== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: rgba(15, 20, 40, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00e5ff;
+  text-shadow: 0 0 12px #00e5ff;
+}
+
+nav a {
+  color: #b0b8ff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff;
+}
+
+/* ====== HERO ====== */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+  padding: 0 8%;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #00e5ff;
+  text-shadow: 0 0 15px #00e5ff;
+}
+
+.hero p {
+  color: #b5b5b5;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: linear-gradient(90deg, #00e5ff, #0078ff);
+  border: none;
+  color: #fff;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.8);
+}
+
+/* ====== GALLERY ====== */
+.gallery {
+  text-align: center;
+  padding: 60px 8%;
+}
+
+.gallery h2 {
+  font-size: 1.5rem;
+  color: #00e5ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+.gallery .images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 260px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #00e5ff55;
+  box-shadow: 0 0 15px #00e5ff55;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00e5ff;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  margin-top: auto;
+  background: rgba(10, 12, 20, 0.9);
+  text-align: center;
+  padding: 15px 0;
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 1px solid #00e5ff33;
+}
