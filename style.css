@@ -1,15 +1,11 @@
-/* ========================================
-   RESET
-======================================== */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========================================
-   BODY
-======================================== */
+/* ===== BODY ===== */
 body {
   font-family: 'Yanone Kaffeesatz', Sans-Serif;
   background: radial-gradient(circle at top, #0a0f24, #030611);
@@ -19,9 +15,7 @@ body {
   flex-direction: column;
 }
 
-/* ========================================
-   HEADER
-======================================== */
+/* ===== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -53,13 +47,30 @@ header .logo {
   transform: scale(1.1);
 }
 
-/* ========================================
-   HERO SECTION
-======================================== */
+/* ===== HERO SECTION ===== */
 .hero {
+  position: relative;
   text-align: center;
   margin-top: 80px;
-  padding: 0 8%;
+  padding: 80px 8%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.hero .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.45; /* transparansi agar teks tetap terbaca */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -74,7 +85,8 @@ header .logo {
 }
 
 .hero p {
-  color: #b5b5b5;
+  text-align: center;
+  color: white;
   font-size: 1rem;
   margin-bottom: 20px;
 }
@@ -97,14 +109,7 @@ header .logo {
   box-shadow: 0 0 30px rgba(0, 229, 255, 0.8);
 }
 
-.hero p {
-    color: white;
-    text-align: center;
-}
-
-/* ========================================
-   MAIN CONTENT
-======================================== */
+/* ===== MAIN CONTENT ===== */
 main h2 {
   margin-top: 30px;
   color: #00e5ff;
@@ -121,9 +126,7 @@ main p {
   text-indent: 20px;
 }
 
-/* ========================================
-   GALLERY
-======================================== */
+/* ===== GALLERY ===== */
 .gallery {
   text-align: center;
   padding: 60px 8%;
@@ -157,9 +160,7 @@ main p {
   box-shadow: 0 0 25px #00e5ff;
 }
 
-/* ========================================
-   FOOTER
-======================================== */
+/* ===== FOOTER ===== */
 footer {
   margin-top: auto;
   background: rgba(10, 12, 20, 0.9);
@@ -206,27 +207,11 @@ footer {
   color: black;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
-@media (max-width: 1024px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .gallery img {
-    width: 220px;
-  }
-}
-
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 15px 5%;
-  }
-
   .hero {
     margin-top: 60px;
+    padding: 60px 5%;
   }
 
   .hero h1 {
@@ -241,10 +226,6 @@ footer {
   main p {
     font-size: 15px;
     margin: 10px 5%;
-  }
-
-  .gallery {
-    padding: 40px 5%;
   }
 
   .gallery img {
